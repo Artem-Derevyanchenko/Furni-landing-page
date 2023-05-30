@@ -1,0 +1,134 @@
+.choose {
+    padding: 25px 0 70px 0;
+    @include media(992) {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    @include media(768) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.choose-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media(992) {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+}
+.choose-content {
+    max-width: 505px;
+    @include media(992) {
+        max-width: 100%;
+    }
+}
+.choose-heading {
+    margin-bottom: 88px;
+    @include media(768) {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+.choose-heading__title {
+    margin-bottom: 27px;
+    @include media(768) {
+        margin-bottom: 15px;
+    }
+}
+// .choose-heading__text {
+// }
+.section-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6a6a6a;
+}
+.choose-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.choose-column {
+    flex: 0 50%;
+    max-width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 45px;
+    @include media(768) {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.choose-item {
+    @include media(768) {
+        text-align: center;
+    }
+}
+.choose-item__icon {
+    margin-bottom: 4px;
+}
+.choose-item__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+}
+.choose-item__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6a6a6a;
+}
+.choose-image {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        width: 296px;
+        height: 397px;
+        background: rgba(53, 115, 110, 0.1);
+        border-radius: 20px;
+        left: -310px;
+        top: 170px;
+        @include media(992) {
+            left: unset;
+            top: unset;
+            right: -0%;
+            bottom: 10%;
+            z-index: 1;
+            background: rgba(53, 115, 110, 0.2);
+        }
+        @include media(768) {
+            width: 180px;
+            height: 200px;
+        }
+    }
+}
+.choose-img {
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+}
+.choose-svg {
+    position: absolute;
+    left: -80px;
+    top: -10px;
+    z-index: -1;
+    @include media(992) {
+        left: -66px;
+        top: -40px;
+        z-index: -1;
+        left: 385px;
+    }
+}
